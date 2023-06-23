@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+        	font-size: 16px;
+            background-color:rgb(220, 228, 249);
+            color:black;
+
+        }
+		</style>
+		           <center><img src="LOCATINGSTUDENT\croquis2.jpg" width="500" height="500" alt="ESPERE A QUE CARGUE"></center>
+	</head>
+<script type="text/javascript">
+  var vueltas = 1;
+	for(vueltas = 1; vueltas <= 3; vueltas++){
+	var usuario = prompt("INGRESE EL USUARIO");
+	var contraseña = prompt("INGRESE LA CONTRASEÑA");
+	var usucorrecto = "cbtis154"
+	var contraseñacorrecta = "programacion"
+	if(usuario == usucorrecto){
+		var poserror2 = 1;
+		if(contraseña == contraseñacorrecta){
+			var poserror = 1;
+		}
+		else{
+			var poserror = 2;
+		}
+	}
+	else{
+		var poserror2 = 2;
+		if(contraseña == contraseñacorrecta){
+			var poserror = 1;
+		}
+		else{
+			var poserror = 2;
+		}
+	}
+	if(poserror2==1 && poserror==1){
+		var vueltas = 5;
+	}
+	//impresion de error
+	if(poserror2 == 2){
+		alert("El usuario es incorrecto");
+	}
+	if(poserror == 2){
+		alert("La contraseña es incorrecta")
+	}
+	if(vueltas==3 && poserror==2 && poserror2==2){
+		document.write("EL SISTEMA SE HA BLOQUEADO DEBIDO A VARIOS INTENTOS FALLIDOS EN EL USUARIO Y CONTRASEÑA ");
+	}
+	if(poserror == 1 && poserror2 == 1){
+		alert("BIENVENIDO");
+		var mew = 1;
+//cierra el switch
+		if(mew == 2){
+			}
+					}
+		
+									}
+
+var opcion=prompt("SELECCIONE LO QUE DESEA LOCALIZAR/ 1.ALUMNOS/2.DOCENTES/3.AULAS");
+
+switch (opcion){
+case '1':
+alert("ALUMNOS");
+var nombre2=prompt("INGRESE NOMBRE(s)");
+var apellidopaterno2=prompt("INGRESE APELLIDO PATERNO");
+var apellidomaterno2=prompt("INGRESE APELLIDO MATERNO");
+var alumnos=(nombre2+" "+apellidopaterno2+" "+apellidomaterno2);
+alert(alumnos)
+break;
+case '2':
+alert("DOCENTES");
+var nombre3=prompt("INGRESE NOMBRE(s)");
+var apellidopaterno3=prompt("INGRESE APELLIDO PATERNO");
+var apellidomaterno3=prompt("INGRESE APELLIDO MATERNO");
+var hora=prompt("INGRESE HORA")
+var docentes=(nombre3+" "+apellidopaterno3+" "+apellidomaterno3);
+var dia=prompt("INGRESE DIA")
+alert(docentes)
+if(nombre3=="marisol" || nombre3=="MARISOL"){
+if(dia=="lunes" ||  dia=="LUNES"){
+	if(hora=12  || hora>=13){
+	alert("AULA 12" )
+	alert("DAES" )		
+}
+}
+}
+	if(nombre3=="elvia" || nombre3=="ELVIA"){
+	if(dia=="lunes" || dia=="LUNES"){
+	if(hora=8  || hora<=10){
+	alert("AULA 21")
+	alert("CPW" )	
+}
+}
+}
+	if(nombre3=="emilia" || nombre3=="EMILIA"){
+	if(dia=="lunes" || dia=="LUNES"){
+	if(hora=7  || hora<=8){
+	alert("AULA 1")
+	alert("ECOLOGIA" )	
+}
+}
+}	
+	if(nombre3=="aniceto" || nombre3=="ANICETO"){
+	if(dia=="lunes" || dia=="LUNES"){
+	if(hora=10  || hora<=12){
+	alert("AULA 6")
+	alert("CALCULO DIFERENCIAL" )	
+}
+}
+}	
+	if(nombre3=="hector" || nombre3=="HECTOR"){
+	if(dia=="lunes" || dia=="LUNES"){
+	if(hora=2  || hora<=3){
+	alert("AULA 13")
+	alert("TUTORIA" )	
+}
+}
+}		
+	if(nombre3=="margarita" || nombre3=="MARGARITA"){
+	if(dia=="martes" || dia=="MARTES"){
+	if(hora=8  || hora<=10){
+	alert("AULA 28")
+	alert("INGLES IV" )	
+}
+}
+}
+	if(nombre3=="elvia" || nombre3=="ELVIA"){
+	if(dia=="martes" || dia=="martes"){
+	if(hora>=10  || hora<=12){
+	alert("LABORATORIO DE COMPUTO")
+	alert("CPW" )	
+}
+}
+}
+	if(nombre3=="marisol" || nombre3=="MARISOL"){
+	if(dia=="martes" || dia=="MARTES"){
+	if(hora=12  || hora<=14){
+	alert("AULA 12")
+	alert("FISICA I" )	
+}
+}	
+}
+	if(nombre3=="emilia" || nombre3=="EMILIA"){
+	if(dia=="miercoles" || dia=="MIERCOLES"){
+	if(hora=8  || hora<=10){
+	alert("AULA 10")
+	alert("ECOLOGIA" )	
+}
+}
+}
+	if(nombre3=="marisol" || nombre3=="MARISOL"){
+	if(dia=="miercoles" || dia=="miercoles"){
+	if(hora>=10  || hora>=12){
+	alert("AULA 12")
+	alert("FISICA I" )	
+}
+}
+}
+	if(nombre3=="marisol" || nombre3=="MARISOL"){
+	if(dia=="miercoles" || dia=="miercoles"){
+	if(hora<=12  || hora<=15){
+	alert("AULA 12")
+	alert("DAES" )	
+}
+}
+}
+	if(nombre3=="olivia" || nombre3=="OLIVIA"){
+	if(dia=="jueves" || dia=="JUEVES"){
+	if(hora1=7  || hora1<=9){
+	alert("LABORATORIO DE COMPUTO")
+	alert("DAEC" )	
+}
+}
+}
+	if(nombre3=="aniceto" || nombre3=="ANICETO"){
+	if(dia=="jueves" || dia=="jueves"){
+	if(hora=9  || hora<=11){
+	alert("AULA 7")
+	alert("CALCULO DIFERENCIAL" )		
+}
+}
+}
+	if(nombre3=="margarita" || nombre3=="MARGARITA"){
+	if(dia=="jueves" || dia=="JUEVES"){
+	if(hora=11  || hora<=12){
+	alert("AULA 28")
+	alert("INGLES IV" )		
+}
+}
+}
+	if(nombre3=="emilia" || nombre3=="EMILIA"){
+	if(dia=="jueves" || dia=="JUEVES"){
+	if(hora=12  || hora<=13){
+	alert("AULA 1")
+	alert("ECOLOGIA" )		
+}
+}
+}
+	if(nombre3=="marisol" || nombre3=="MARISOL"){
+	if(dia=="viernes" || dia=="VIERNES"){
+	if(hora=7  || hora<=9){
+	alert("AULA 12")
+	alert("DAES" )		
+}
+}
+}
+	if(nombre3=="olivia" || nombre3=="OLIVIA"){
+	if(dia=="viernes" || dia=="VIERNES"){
+	if(hora=9  || hora<=13){
+	alert("LABORATORIO DE COMPUTO")
+	alert("DAEC" )		
+}
+}
+}
+break;
+case '3':
+alert("AULAS");
+break;
+default:
+alert("ESTA SELECCION NO EXISTE,VAYA A DIRECCION");
+}
+</script>
+</body>
+</html>
